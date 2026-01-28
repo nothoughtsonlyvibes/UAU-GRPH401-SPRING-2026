@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Image Tag Example: Sky</h2>
+    <img src="images/tristan-ramberg-WmPnhxjKD-A-unsplash.jpg" width="200"/>
+
+    <h2>Waterfall</h2>
+    <video width="320" height="240" controls>
+        <source src="video/326081_small.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
+
+        <h2>SVG via Tag Example</h2>
+        <img src="svg/seal-157608.svg" alt="Seal" width="200" />
+
+        <h2>SVG via Code Example</h2>
+        <svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Purple circle"> 
+
+
+            <circle cx="60" cy="60" r="45" fill="#895B7B"></circle>
+</svg>
+
+
+            <h2>Canvas Code Example</h2>
+            <canvas id="myCanvas" width="300" height="150"></canvas>
+            <script>
+                const canvas = document.getElementByID("myCanvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.fillStyle = "#895B7B";
+                ctx.fillRect(50, 50, 200, 50);
+            </script>
+</body> 
+</html>
