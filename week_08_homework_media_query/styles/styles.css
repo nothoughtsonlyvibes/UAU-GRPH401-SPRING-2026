@@ -1,0 +1,106 @@
+:root {
+    --primary: #3498db;
+    --dark: #03183d;
+    --alternate: #00b894;
+    --background: #d0d2d9;
+    --spacing: 20px;
+    --headerfontsize: 18px;
+    --subheadfontsize: 16px;
+    --paragraphfontsize: 12px;
+}
+
+header {
+    padding: var(--spacing);
+    background: var(--dark);
+    color: var(--primary);
+    text-align: left-align;
+    font-size: var(--headerfontsize);
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--background);
+    color: var(--primary);
+    font-size: var(paragraphfontsize);
+}
+
+button {
+    background: var(--dark);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+}
+
+header h1 {
+    font-size: var(--paragraphfontsize);
+}
+.card {
+    background: var(--background);
+}
+
+.card img {
+    background: var(--dark);
+}
+
+.card-content {
+    background: var(--background);
+
+}
+
+.card-content h2 {
+    color: var(--dark);
+    font-size: var(--subheadfontsize);
+}
+
+.card-content p {
+    color: var(--dark);
+    font-size: var(--paragraphfontsize);
+}
+
+.card-content button {
+    background: var(--background);
+    font-size: var(--paragraphfontsize);
+    color: var(--dark);
+    padding: 18px 30px;
+    border: none;
+}
+
+.card-content button:hover {
+    color: var(--alternate);
+}
+
+/* This is Tablet */
+@media (min-width: 768px) {
+    :root {
+        --spacing: 60px;
+    }
+    header {
+        background-color: var(--primary);
+        padding: 30px;
+    }
+    header h1 {
+        font-size: var(--headerfontsize);
+        text-align: center;
+        color: var(--dark);
+    }
+    .card {
+        text-align: center;
+    }
+}
+
+/* This is desktop */
+@media (min-width: 1200px) {
+    header {
+        background-color: var(--alternate);
+        color: var (--dark);
+        font-size: var(--headerfontsize);
+        padding: 40px;
+    }
+
+     header h1 {
+        font-size: var(--subheadfontsize);
+        text-align: center;
+        color: var(--dark);
+    }
+}
