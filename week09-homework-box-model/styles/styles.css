@@ -1,0 +1,79 @@
+:root {
+--primary-color: #a09be9;
+--secondary-color: #3f3e84;
+--border-color: #b7bed8;
+--border-width: 1px;
+
+--button-background-color: #252646;
+--button-text-color: #ccd1f4;
+--button-hover-background-color: #111630;
+
+--button-padding: 15px 25px;
+
+--card-padding-mobile: 25px;
+--card-padding-desktop: 40px;
+
+--card-border-radius: 15px;
+--card-margin: 25px;
+
+--card-width-desktop: 500px;
+--card-width-mobile: 350px;
+
+--heading-font-size-mobile: 20px;
+--heading-font-size-desktop: 40px;
+
+--paragraph-font-size: 14px;
+
+--image-width: 100%;
+}
+
+/* Laptop+ */
+.card {
+    width: var(--card-width-desktop);
+    padding: var(--card-padding-desktop);
+    margin: var(--card-margin);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--card-border-radius);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: var(--heading-font-size-desktop);
+}
+
+p {
+    color: var(--secondary-color);
+    font-size: var(--paragraph-font-size);
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--card-border-radius);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+img {
+    width: var(--image-width);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+.card {
+    width: var(--card-width-mobile);
+    padding: var(--card-padding-mobile);
+}
+
+h2 {
+    font-size: var(--heading-font-size-mobile);
+}
+
+}
+
